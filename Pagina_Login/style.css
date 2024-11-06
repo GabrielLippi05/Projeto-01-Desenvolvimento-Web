@@ -36,11 +36,12 @@ header {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding: 20px;
 }
 
 main {
-    flex: 1;
-    padding: 40px;
+    flex: 1; /* O main ocupa o restante do espaço disponível */
+    padding: 20px;
 }
 
 main h1 {
@@ -100,17 +101,29 @@ input[type="submit"]:hover {
     background-color: #444;
 }
 
+/* Ajustes na imagem */
 .image-section {
-    flex: 1;
+    flex: 0 0 50%; /* A imagem ocupa no máximo 50% da largura do container */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: #ffffff;
+    height: auto;
 }
 
-.image-section {
-    width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 20px; /* Adiciona um espaço abaixo da imagem */
+.image-section img {
+    width: 100%; /* A imagem ocupa toda a largura do seu container */
+    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+    object-fit: contain; /* Garantir que a imagem se ajuste sem distorção */
 }
 
+/* Responsividade - Ajuste para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Para telas pequenas, o layout se torna vertical */
+    }
+
+    .image-section {
+        flex: 0 0 100%; /* A imagem ocupará 100% da largura */
+    }
+}
