@@ -5,27 +5,46 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #ffffff); /* cores suaves */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
+    animation: backgroundAnimation 10s infinite alternate ease-in-out;
+    will-change: background;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(to right, #e0f7fa, #ffffff);
+    }
+    100% {
+        background: linear-gradient(to right, #dcedc8, #f1f8e9);
+    }
 }
 
 .main-container {
     display: flex;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 900px;
     width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    will-change: transform, opacity;
 }
 
 .login-section {
     flex: 1;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: slideIn 1s ease-out;
+    animation-delay: 0.2s;
 }
 
 .image-section {
@@ -34,6 +53,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background: #ffffff; /* fundo branco neutro */
+    animation: fadeIn 1s ease-out;
 }
 
 .image-section img {
@@ -41,87 +62,106 @@ body {
     max-height: 400px;
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.image-section:hover img {
+    transform: scale(1.05);
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 15px;
     color: #333;
+    text-align: center;
+    animation: fadeInText 1s ease-in-out;
 }
 
 p {
     margin-bottom: 20px;
-    color: #666;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    animation: fadeInText 1.5s ease-in-out;
 }
 
 .form-group {
     margin-bottom: 20px;
+    position: relative;
+    animation: fadeInUp 0.8s ease;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #555;
+    font-weight: 500;
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+input:focus,
+select:focus {
+    border-color: #026d00;
+    box-shadow: 0 0 5px rgba(2, 109, 0, 0.3);
+    transform: scale(1.02);
 }
 
 button {
     width: 100%;
-    padding: 12px;
-    background-color: #026d00;
+    padding: 14px;
+    background: linear-gradient(to right, #026d00, #45a049);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    will-change: transform, background-color;
 }
 
 button:hover {
-    background-color: #45a049;
+    background: linear-gradient(to right, #45a049, #026d00);
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.forgot-password {
+.forgot-password,
+.back-to-login,
+.create-account {
     display: block;
     text-align: center;
     margin-top: 15px;
     color: #026d00;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.forgot-password:hover {
+.forgot-password:hover,
+.back-to-login:hover,
+.create-account:hover {
+    color: #45a049;
     text-decoration: underline;
 }
-
-.back-to-login {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-.back-to-login:hover {
-    text-decoration: underline;
-}
-
-/* Adicione isso ao final do seu arquivo styles.css */
 
 select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
     background-color: white;
     appearance: none;
     -webkit-appearance: none;
@@ -132,43 +172,45 @@ select {
     background-size: 20px;
 }
 
-input[type="text"],
-input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
+/* Keyframes para animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-#registerForm .form-group {
-    margin-bottom: 15px;
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-#registerForm button {
-    margin-top: 10px;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.back-to-login {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    color: #026d00;
-    text-decoration: none;
-}
-
-.back-to-login:hover {
-    text-decoration: underline;
-}
-
-.create-account {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    color: #026d00;
-    text-decoration: none;
-}
-
-.create-account:hover {
-    text-decoration: underline;
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
