@@ -2,9 +2,37 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Cor de fundo semelhante à página "Sobre Nós" */
+  background-color: #f4f4f4; /* Cor de fundo */
 }
 
+.navbar {
+  background-color: #026d00; /* Cor de fundo da barra de navegação */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo da barra de navegação */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o preenchimento */
+  display: inline-flex; /* Exibe os itens em linha e permite centralização */
+}
+
+.navbar li {
+  margin: 0 20px; /* Espaçamento entre os itens */
+}
+
+.navbar a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
+
+/* Estilos adicionais para o restante da página */
 .main-container {
   display: flex;
   background-color: #fff;
@@ -14,7 +42,18 @@ body {
   max-width: 900px;
   width: 100%;
   margin: auto; /* Centraliza o container */
+  margin-top: 20px; /* Espaço acima do container */
 }
+.main-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
 
 .login-section {
   flex: 1;
