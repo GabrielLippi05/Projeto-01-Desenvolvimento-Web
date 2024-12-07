@@ -1,148 +1,64 @@
-<html>
- <head>
-  <title>
-   Joga Aqui
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #fff;
-        }
-        header {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 50px;
-            border-bottom: 1px solid #000;
-        }
-        header img {
-            width: 50px;
-            height: 50px;
-        }
-        header nav {
-            display: flex;
-            gap: 30px;
-        }
-        header nav a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 50px;
-            width: 100%;
-            max-width: 1200px;
-        }
-        .form-container {
-            flex: 1;
-            margin-right: 50px;
-        }
-        .form-container h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #000;
-            border-radius: 5px;
-        }
-        .form-group input[type="date"] {
-            padding-right: 30px;
-        }
-        .form-group input[type="time"] {
-            padding-right: 30px;
-        }
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            background-color: #000;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .image-container {
-            flex: 1;
-        }
-        .image-container img {
-            width: 100%;
-            border-radius: 10px;
-        }
-  </style>
- </head>
- <body>
-  <header>
-   <img alt="Soccer ball logo" height="50" src="https://storage.googleapis.com/a1aa/image/JZXiXt5fadzXWCe1G4NIO86ZtwMlqOKdr6e9VMX6t6I5g6fOB.jpg" width="50"/>
-   <nav>
-    <a href="#">
-     JOGA AQUI
-    </a>
-    <a href="#">
-     MEU TIME
-    </a>
-    <a href="#">
-     SOBRE NÓS
-    </a>
-    <a href="#">
-     CONTATO
-    </a>
-   </nav>
-   <i class="fas fa-user-circle fa-2x">
-   </i>
-  </header>
-  <div class="content">
-   <div class="form-container">
-    <h2>
-     CONVOCAR:
-    </h2>
-    <div class="form-group">
-     <label for="local">
-      LOCAL DO JOGO:
-     </label>
-     <input id="local" placeholder="Endereço" type="text"/>
-    </div>
-    <div class="form-group">
-     <label for="data">
-      DATA:
-     </label>
-     <input id="data" placeholder="DD/MM/AAAA" type="date"/>
-    </div>
-    <div class="form-group">
-     <label for="hora">
-      HORÁRIO:
-     </label>
-     <input id="hora" type="time"/>
-    </div>
-    <div class="form-group">
-     <button type="submit">
-      CONVOCAR
-     </button>
-    </div>
-   </div>
-   <div class="image-container">
-    <img alt="Illustration of soccer players and a mobile app interface" height="800" src="https://storage.googleapis.com/a1aa/image/YRKbcEZXnzIGIdPKn8svkKkNUCAxSDP2TAx4BezqsMpNoevTA.jpg" width="600"/>
-   </div>
-  </div>
- </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convocar Jogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Opções de Login</a></li>
+            <li><a href="../convoque/convoque.html">Convoque</a></li>
+            <li><a href="../convocar/convocar.html">Convocar</a></li>
+            <li><a href="../home/home.html">Sobre Nós</a></li>
+            <li><a href="../contact/index.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        <section class="form-section">
+            <h1>Convocar Jogo</h1>
+            <form id="convocarForm">
+                <div class="form-group">
+                    <label for="local">Local do Jogo:</label>
+                    <input type="text" id="local" name="local" placeholder="Endereço" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="hora">Horário:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="telefone">Número de Celular:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                </div>
+            
+                <button type="submit">Convocar</button>
+                <div id="successMessage" class="success"></div>
+            </form>            
+        </section>
+        <section class="image-section">
+            <img src="futebol.png" alt="Imagem de futebol">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Joga Aqui. Todos os direitos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="https://github.com/GabrielLippi05/Projeto-01-Desenvolvimento-Web.git" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

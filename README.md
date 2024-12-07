@@ -41,3 +41,7 @@ Sistema web para recrutamento e convocação de jogadores para partidas esportiv
 - [Funcionamento do Site][def2]
 
 [def2]: funcionamento.jpg
+
+## 📝 Alterações de Projeto
+
+- A aba de Comunidade, que incluia a ''MeuPerfil'', ''MeuTime'' e uma Aba com relação ao recrutamento via comentários (como se fosse um fórum) foi removida, mas algum dia com o retorno do projeto poderá ser finalizado
