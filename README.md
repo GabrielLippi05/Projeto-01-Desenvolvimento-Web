@@ -19,7 +19,11 @@ Sistema web para recrutamento e convocação de jogadores para partidas esportiv
 ## 👨‍🏫 Professor Orientador
 - José Matias Lemes Filho
 
+<<<<<<< HEAD
 ## 🎨 Design    
+=======
+## 🎨 Design
+>>>>>>> origin/lippi/recuperar
 - [Esboço do Projeto no Canva](https://www.canva.com/design/DAGTGnuKYJM/wJBhvL9siPmaZzfhDwvVIw/view?mode=prototype)
 - [Wireframe do Projeto no Uizard](https://app.uizard.io/p/17f88208/overview)
 
