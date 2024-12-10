@@ -1,18 +1,18 @@
-function showLoading() {
-    const div = document.createElement("div");
-    div.classList.add("loading", "centralize");
+//function showLoading() {
+  //  const div = document.createElement("div");
+    //div.classList.add("loading", "centralize");
 
-    const label = document.createElement("label");
-    label.innerText = "Carregando...";
+    //const label = document.createElement("label");
+    //label.innerText = "Carregando...";
 
-    div.appendChild(label);
+    //div.appendChild(label);
 
-    document.body.appendChild(div);
-}
+    //document.body.appendChild(div);
+//}
 
-function hideLoading() {
-    const loadings = document.getElementsByClassName("loading");
-    if (loadings.length) {
-        loadings[0].remove();
-    }
-}
+//function hideLoading() {
+  //  const loadings = document.getElementsByClassName("loading");
+   // if (loadings.length) {
+   //     loadings[0].remove();
+    //}
+//}

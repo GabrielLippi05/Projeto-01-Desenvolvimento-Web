@@ -22,7 +22,7 @@ document.getElementById('convocarForm').addEventListener('submit', async functio
             document.getElementById('successMessage').textContent = 'Erro ao enviar a convocação. Tente novamente.';
         }
     } catch (error) {
-        document.getElementById('successMessage').textContent = 'Erro de conexão. Tente novamente.';
+        document.getElementById('successMessage').textContent = 'Erro de conexão. Se essa mensagem apareceu, contate a página, ausência de API';
     }
 });
 

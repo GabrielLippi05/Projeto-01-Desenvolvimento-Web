@@ -8,6 +8,32 @@ body {
     flex-direction: column;
 }
 
+.navbar {
+    background-color: #026d00; /* Cor de fundo da barra de navegação */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo da barra de navegação */
+  }
+  
+  .navbar ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o preenchimento */
+    display: inline-flex; /* Exibe os itens em linha e permite centralização */
+  }
+  
+  .navbar li {
+    margin: 0 20px; /* Espaçamento entre os itens */
+  }
+  
+  .navbar a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+  }
 .main-container {
     flex: 1;
     display: flex;
@@ -78,7 +104,7 @@ button {
     width: 100%;
     padding: 12px;
     background-color: #026d00;
-    color: white;
+    color: rgb(58, 221, 8);
     border: none;
     border-radius: 4px;
     font-size: 16px;

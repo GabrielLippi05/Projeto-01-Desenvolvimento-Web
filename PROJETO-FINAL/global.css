@@ -72,7 +72,7 @@ button.fab.right {
 .clear {
     background: transparent;
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .solid {
     background: white;
