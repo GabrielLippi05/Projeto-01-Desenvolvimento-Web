@@ -2,7 +2,7 @@
 - Nome da Plataforma: Joga Aqui
 
 ## 📲 Site do Joga Aqui
-- [Joga Aqui Site][https://projeto-devweb.vercel.app/]
+- [Joga Aqui Site](https://projeto-devweb.vercel.app/)
 
 ## 🎞 Introdução 
 - Sistema web para recrutamento e convocação de jogadores para partidas esportivas.
