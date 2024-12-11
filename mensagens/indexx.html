@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Joga Aqui - Enviar Mensagem</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="top-bar">
+        <nav class="navbar">
+            <button class="menu-btn">&#9776;</button>
+            <div class="logo">Joga Aqui</div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="login-card">
+            <h1>Bem vindo ao Joga Aqui</h1>
+            <p>Envie sua mensagem informando:</p>
+            
+            <form class="login-form">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+55XXXXXXXXXXX" required />
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="register-link">
+                Não tem uma conta? <a href="#">Registre-se</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
