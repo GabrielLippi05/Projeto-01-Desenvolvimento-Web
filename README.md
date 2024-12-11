@@ -1,17 +1,18 @@
 # 🎮 Sistema de Recrutamento de jogadores
 - Nome da Plataforma: Joga Aqui
 
-## 📚 Sobre o Projeto
-Sistema web para recrutamento e convocação de jogadores para partidas esportivas.
+## 🎞 Introdução 
+- Sistema web para recrutamento e convocação de jogadores para partidas esportivas.
 
-## 🎯 Funcionalidades
-- Cadastro de usuários
+## 🎯 Tecnologias
+- Cadastro de usuários via FIREBASE
 - Sistema de login
-- Convocação automática de jogadores
+- Convocação de Jogadores
 - Notificação via mensagem de celular
-- Agendamento de partidas com data, horário e local
+- Sistema para Contato entre a página e o usuário
 
 ## 👥 Integrantes da Equipe
+
 - Gabriel Cattuzo 
 - Gabriel Lippi Angelini
 - Heitor Augusto Gonçalves
@@ -32,16 +33,43 @@ Sistema web para recrutamento e convocação de jogadores para partidas esportiv
 
 **Observação:** O projeto está organizado em sprints semanais no Trello, onde todas as etapas e necessidades para a realização do projeto estão detalhadamente descritas.
 
+## 💻 Adaptações de Projeto
+
+**Funcionalidade removida**: Interação entre usuários e comunidade removida
+
 ## ⚙️ Algoritmo do Site e Esboço de Funcionamento
 
 - [Algoritmo do Site][def]
 
-[def]: algoritmo.jpg
+[def]: /assets/algoritmo.jpg
 
 - [Funcionamento do Site][def2]
 
-[def2]: funcionamento.jpg
+[def2]: /assets/funcionamento.jpg
 
-## 📝 Alterações de Projeto
+## 💻 Telas
 
-- A aba de Comunidade, que incluia a ''MeuPerfil'', ''MeuTime'' e uma Aba com relação ao recrutamento via comentários (como se fosse um fórum) foi removida, mas algum dia com o retorno do projeto poderá ser finalizado
+- [Tela de Cadastro][def3]
+
+[def3]: /assets/registrar.png
+
+- [Tela de Login][def4]
+
+[def4]: /assets/login.png
+
+- [Tela Sobre Nós][def5]
+
+[def5]: /assets/sobrenos.png
+
+- [Tela Contato][def6]
+
+[def6]: /assets/contato.png
+
+- [Tela Convoque][def7]
+
+[def7]: /assets/convocar.png
+
+- [Tela Convocar][def8]
+
+[def8]: /assets/convoque.png
+

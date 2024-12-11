@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #34C759; /* Cor verde */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #000; /* Cor preta */
+  margin: 4px 0;
+}
+
+.logo {
+  height: 40px; /* Ajuste conforme necessário */
+}
+
+.navbar {
+  display: none; /* Esconde o menu por padrão */
+  background-color: #000; /* Cor preta */
+  position: fixed; /* Fixa o menu na tela */
+  top: 0;
+  left: 0; /* Alinha o menu à esquerda */
+  width: 250px; /* Largura do menu */
+  padding-top: 0; /* Espaço para a logo */
+  transition: transform 0.3s ease, height 0.3s ease; /* Transição suave */
+  transform: translateX(-100%); /* Esconde o menu fora da tela */
+}
+
+.navbar img.nav-logo {
+  display: block;
+  margin: 20px auto; /* Centraliza horizontalmente */
+  width: 80%; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #444; /* Cor de fundo ao passar o mouse */
+}
+
+/* Classe para mostrar o menu */
+.navbar.active {
+  display: block; /* Exibe o menu */
+  transform: translateX(0); /* Move o menu para a posição visível */
+  height: auto; /* Altura dinâmica baseada nos itens */
+}
+
+/* Estilos adicionais para o restante da página */
+.main-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  margin: auto; /* Centraliza o container */
+  margin-top: 20px; /* Espaço acima do container */
+}
+.main-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+
+.login-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-section img {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #026d00; /* Cor do botão */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.error {
+  color: #ff0000;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.success {
+  color: #008000;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do rodapé */
+.footer {
+  background-color: #282c34;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

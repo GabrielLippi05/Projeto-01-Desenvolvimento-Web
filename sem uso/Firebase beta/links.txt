@@ -1,4 +1,0 @@
-https://github.com/FirebaseExtended/firebase-video-samples/tree/main/fundamentals/getting-started-with-auth-web
-
-https://youtu.be/rbuSx1yEgV8?si=atv6py2-Zi6mEKR5
-
