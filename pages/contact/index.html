@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Opções de Login</a></li>
+            <li><a href="../convoque/convoque.html">Convoque</a></li>
+            <li><a href="../convocar/convocar.html">Convocar</a></li>
+            <li><a href="../home/home.html">Sobre Nós</a></li>
+            <li><a href="../contact/index.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main class="main-container">
+        <section class="login-section">
+            <h1>Entre em Contato</h1>
+            <form action="https://formspree.io/f/mnnaeejz" method="POST" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div id="messageError" class="error"></div>
+                </div>
+
+                <button type="submit">Enviar</button>
+                <div id="successMessage" class="success"></div>
+            </form>
+        </section>
+        <section class="image-section">
+            <img src="futebol.png" alt="Imagem de futebol">
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+          <p>&copy; 2024 Joga Aqui. Todos os direitos reservados.</p>
+          <ul class="footer-links">
+            <li><a href="https://github.com/GabrielLippi05/Projeto-01-Desenvolvimento-Web.git" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </footer>      
+</body>
+</html>

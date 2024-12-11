@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column; /* Permite organizar elementos em uma coluna */
+  min-height: 100vh; /* Altura mínima para ocupar toda a tela */
+}
+
+.navbar {
+  background-color: #026d00; /* Cor de fundo da barra de navegação */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo da barra de navegação */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o preenchimento */
+  display: inline-flex; /* Exibe os itens em linha e permite centralização */
+}
+
+.navbar li {
+  margin: 0 20px; /* Espaçamento entre os itens */
+}
+
+.navbar a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
+.main-container {
+  flex-grow: 1; /* Faz com que a main-container preencha o espaço disponível */
+  display: flex;
+  flex-direction: row; /* Mantém as seções lado a lado */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1200px; /* Largura máxima da caixa */
+  width: calc(100% - 40px); /* Margem de 20px nas laterais */
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.login-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #026d00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #026d00;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.back-to-login {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.back-to-login:hover {
+    text-decoration: underline;
+}
+
+/* Adicione isso ao final do seu arquivo styles.css */
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#registerForm .form-group {
+    margin-bottom: 15px;
+}
+
+#registerForm button {
+    margin-top: 10px;
+}
+
+.back-to-login {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #026d00;
+    text-decoration: none;
+}
+
+.back-to-login:hover {
+    text-decoration: underline;
+}
+
+.create-account {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #026d00;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+/* Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo do rodapé */
+  .footer {
+    width: 100%;
+    background-color: #282c34;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
