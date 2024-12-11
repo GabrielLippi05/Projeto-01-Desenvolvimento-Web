@@ -1,84 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #34C759; /* Cor verde */
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #000; /* Cor preta */
-  margin: 4px 0;
-}
-
-.logo {
-  height: 40px; /* Ajuste conforme necessário */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Cor de fundo */
 }
 
 .navbar {
-  display: none; /* Esconde o menu por padrão */
-  background-color: #000; /* Cor preta */
-  position: fixed; /* Fixa o menu na tela */
-  top: 0;
-  left: 0; /* Alinha o menu à esquerda */
-  width: 250px; /* Largura do menu */
-  padding-top: 0; /* Espaço para a logo */
-  transition: transform 0.3s ease, height 0.3s ease; /* Transição suave */
-  transform: translateX(-100%); /* Esconde o menu fora da tela */
-}
-
-.navbar img.nav-logo {
-  display: block;
-  margin: 20px auto; /* Centraliza horizontalmente */
-  width: 80%; /* Ajuste o tamanho conforme necessário */
-  height: auto;
+  background-color: #026d00; /* Cor de fundo da barra de navegação */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo da barra de navegação */
 }
 
 .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style-type: none; /* Remove os marcadores da lista */
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o preenchimento */
+  display: inline-flex; /* Exibe os itens em linha e permite centralização */
 }
 
 .navbar li {
-  text-align: center;
-  margin: 10px 0;
+  margin: 0 20px; /* Espaçamento entre os itens */
 }
 
 .navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 16px; /* Tamanho da fonte */
 }
 
 .navbar a:hover {
-  background-color: #444; /* Cor de fundo ao passar o mouse */
-}
-
-/* Classe para mostrar o menu */
-.navbar.active {
-  display: block; /* Exibe o menu */
-  transform: translateX(0); /* Move o menu para a posição visível */
-  height: auto; /* Altura dinâmica baseada nos itens */
+  text-decoration: underline; /* Sublinha o texto ao passar o mouse */
 }
 
 /* Estilos adicionais para o restante da página */

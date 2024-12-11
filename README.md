@@ -35,7 +35,7 @@
 
 ## 💻 Adaptações de Projeto
 
-**Funcionalidade removida**: Interação entre usuários e comunidade removida
+**Funcionalidade Removida**: Interação entre usuários (Convocar) e Comunidade Removida
 
 ## ⚙️ Algoritmo do Site e Esboço de Funcionamento
 
