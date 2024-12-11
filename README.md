@@ -4,6 +4,10 @@
 ## 📲 Site do Joga Aqui
 - [Joga Aqui Site](https://projeto-devweb.vercel.app/)
 
+## 📌 Manual de Uso do Site
+
+- [Joga Aqui Manual Youtube](https://youtu.be/EPcR1KpKKEE)
+
 ## 🎞 Introdução 
 - Sistema web para recrutamento e convocação de jogadores para partidas esportivas.
 
